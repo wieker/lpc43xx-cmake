@@ -4,6 +4,10 @@ if(CMAKE_HOST_WIN32)
   set(EXECUTABLE_SUFFIX .exe)
 endif()
 
+set(TOOLCHAIN_PREFIX "/usr")
+
+set(OPENOCD_BINARY "/home/wieker/Projects/linux/hackrf/openocd-bin/bin/openocd")
+
 # Supported C libraries
 set(SUPPORTED_CLIBS newlib newlib-nano redlib)
 
