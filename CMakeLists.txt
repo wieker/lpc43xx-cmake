@@ -144,6 +144,8 @@ else()
   set(HAVE_CHECKSUM_TOOL OFF)
   message(STATUS "WARNING: LPCXpresso checksum tool not found. 'make bin' target will NOT add checksum information.")
 endif()
+set(HAVE_CHECKSUM_TOOL ON)
+set(CHECKSUM_TOOL /usr/local/lpcxpresso_8.2.2_650/lpcxpresso/bin/checksum)
 
 # Check if specified path to the OpenOCD binary is correct
 if(EXISTS ${OPENOCD_BINARY})
@@ -165,6 +167,7 @@ if(EXISTS ${OPENOCD_BINARY})
     # Set OpenOCD configuration file if not specified
     if(NOT DEFINED OPENOCD_CONFIG)
       set(OPENOCD_CONFIG stlink-v2_lpc43xx.cfg)
+      #set(OPENOCD_CONFIG openocd.cfg)
     endif()
     message(STATUS "OpenOCD configuration: " ${OPENOCD_CONFIG})
     # Set OpenOCD transport if not specified

@@ -3,27 +3,29 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
       <config projectName="HelloWorld" targetName="bin" />
+      <config projectName="HelloWorld" targetName="flash" />
       <config projectName="HelloWorld" targetName="lpc_chip_43xx" />
       <config projectName="HelloWorld" targetName="HelloWorld.axf" />
       <config projectName="HelloWorld" targetName="lst" />
       <config projectName="HelloWorld" targetName="hex" />
+      <config projectName="HelloWorld" targetName="erase" />
     </generated>
   </component>
-  <component name="CMakeSettings">
+  <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
     </configurations>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ad01124-2d53-4f65-ad8d-0bdfd4fd1004" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/lpc43xx-cmake.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/openocd.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/stlink-v2_lpc43xx.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/debug/stlink-v2_lpc43xx.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/lpc43xx/ldscripts/default/lib/newlib-nano/nohost_lib.ld" beforeDir="false" afterPath="$PROJECT_DIR$/platform/lpc43xx/ldscripts/default/lib/newlib-nano/nohost_lib.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/lpc43xx/ldscripts/default/lib/newlib/nohost_lib.ld" beforeDir="false" afterPath="$PROJECT_DIR$/platform/lpc43xx/ldscripts/default/lib/newlib/nohost_lib.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/lpc43xx/lpc43xx_targets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/platform/lpc43xx/lpc43xx_targets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/application/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sources/application/CMakeLists.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +44,12 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/CMakeLists.txt" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -57,13 +65,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="CMake Application.lpc_chip_43xx">
+  <component name="RunManager" selected="CMake Application.flash">
     <configuration name="HelloWorld.axf" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="HelloWorld" TARGET_NAME="HelloWorld.axf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="HelloWorld" RUN_TARGET_NAME="HelloWorld.axf">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="bin" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="HelloWorld" TARGET_NAME="bin" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="erase" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="HelloWorld" TARGET_NAME="erase" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="flash" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="HelloWorld" TARGET_NAME="flash" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -85,6 +103,8 @@
     </configuration>
     <list>
       <item itemvalue="CMake Application.bin" />
+      <item itemvalue="CMake Application.erase" />
+      <item itemvalue="CMake Application.flash" />
       <item itemvalue="CMake Application.HelloWorld.axf" />
       <item itemvalue="CMake Application.hex" />
       <item itemvalue="CMake Application.lst" />
@@ -101,8 +121,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583268165776</updated>
-      <workItem from="1583268167800" duration="284000" />
+      <workItem from="1583268167800" duration="890000" />
+      <workItem from="1583701230298" duration="96000" />
+      <workItem from="1583703331918" duration="2510000" />
     </task>
+    <task id="LOCAL-00001" summary="LPC4357 hello world">
+      <created>1583268527602</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583268527602</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,10 +143,16 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="LPC4357 hello world" />
+    <option name="LAST_COMMIT_MESSAGE" value="LPC4357 hello world" />
   </component>
 </project>

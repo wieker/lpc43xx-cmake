@@ -6,7 +6,9 @@ file(GLOB HEADER_FILES
   *.h
 )
 
-include_directories(${LPCOPEN_CHIP_INCLUDE_PATHS})
+include_directories(${LPCOPEN_CHIP_INCLUDE_PATHS}
+        "/usr/local/lpcxpresso_8.2.2_650/lpcxpresso/tools/arm-none-eabi/include/"
+        )
 
 # Add system files
 if(${CPP})
