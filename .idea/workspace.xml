@@ -18,10 +18,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ad01124-2d53-4f65-ad8d-0bdfd4fd1004" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platform/lpc43xx/lpc43xx_targets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/platform/lpc43xx/lpc43xx_targets.cmake" afterDir="false" />
-    </list>
+    <list default="true" id="7ad01124-2d53-4f65-ad8d-0bdfd4fd1004" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +125,7 @@
       <workItem from="1583268167800" duration="890000" />
       <workItem from="1583701230298" duration="96000" />
       <workItem from="1583703331918" duration="3156000" />
-      <workItem from="1583788680491" duration="1640000" />
+      <workItem from="1583788680491" duration="2341000" />
     </task>
     <task id="LOCAL-00001" summary="LPC4357 hello world">
       <created>1583268527602</created>
@@ -151,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583791643339</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="CLion + Remote GDB + OpenOCD works">
+      <created>1583792067555</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1583792067555</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,6 +178,7 @@
     <MESSAGE value="LPC4357 hello world" />
     <MESSAGE value="trying to configure CMake + OpenOCD build target" />
     <MESSAGE value="CMake + OpenOCD + local LPCXpresso + LPC4357 board works" />
-    <option name="LAST_COMMIT_MESSAGE" value="CMake + OpenOCD + local LPCXpresso + LPC4357 board works" />
+    <MESSAGE value="CLion + Remote GDB + OpenOCD works" />
+    <option name="LAST_COMMIT_MESSAGE" value="CLion + Remote GDB + OpenOCD works" />
   </component>
 </project>
