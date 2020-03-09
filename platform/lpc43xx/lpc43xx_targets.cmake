@@ -31,4 +31,9 @@ if(${HAVE_OPENOCD})
     DEPENDS ${FULL_OUTPUT_NAME}
     COMMAND ${OPENOCD_BINARY} -c "set _TRANSPORT ${OPENOCD_TRANSPORT}" -f ${CMAKE_SOURCE_DIR}/debug/${OPENOCD_CONFIG} -c "init; reset; sleep 500; halt; flash protect ${FLASH_BANK} 0 last off; flash erase_sector ${FLASH_BANK} 0 last; sleep 500; reset; shutdown;"
   )
+  add_custom_target(gdb_server
+    DEPENDS ${FULL_OUTPUT_NAME}
+    COMMAND make bin
+    COMMAND ${OPENOCD_BINARY} -f ${CMAKE_SOURCE_DIR}/debug/${OPENOCD_CONFIG}
+  )
 endif()

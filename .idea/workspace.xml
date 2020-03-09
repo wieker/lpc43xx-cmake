@@ -7,6 +7,7 @@
       <config projectName="HelloWorld" targetName="lpc_chip_43xx" />
       <config projectName="HelloWorld" targetName="HelloWorld.axf" />
       <config projectName="HelloWorld" targetName="lst" />
+      <config projectName="HelloWorld" targetName="gdb_server" />
       <config projectName="HelloWorld" targetName="hex" />
       <config projectName="HelloWorld" targetName="erase" />
     </generated>
@@ -18,7 +19,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ad01124-2d53-4f65-ad8d-0bdfd4fd1004" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sources/application/openocd_command" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/platform/lpc43xx/lpc43xx_targets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/platform/lpc43xx/lpc43xx_targets.cmake" afterDir="false" />
     </list>
@@ -31,7 +31,6 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -60,7 +59,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="CMake Application.flash">
+  <component name="RunManager" selected="GDB Remote Debug.Remote GDB">
+    <configuration name="Remote GDB" type="CLion_Remote" toolchainName="Default" remoteCommand="localhost:3333" symbolFile="$PROJECT_DIR$/cmake-build-debug/bin/HelloWorld.axf" sysroot="">
+      <method v="2" />
+    </configuration>
     <configuration name="HelloWorld.axf" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="HelloWorld" TARGET_NAME="HelloWorld.axf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="HelloWorld" RUN_TARGET_NAME="HelloWorld.axf">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -77,6 +79,11 @@
       </method>
     </configuration>
     <configuration name="flash" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="HelloWorld" TARGET_NAME="flash" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gdb_server" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="HelloWorld" TARGET_NAME="gdb_server" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -100,10 +107,12 @@
       <item itemvalue="CMake Application.bin" />
       <item itemvalue="CMake Application.erase" />
       <item itemvalue="CMake Application.flash" />
+      <item itemvalue="CMake Application.gdb_server" />
       <item itemvalue="CMake Application.HelloWorld.axf" />
       <item itemvalue="CMake Application.hex" />
       <item itemvalue="CMake Application.lst" />
       <item itemvalue="CMake Application.lpc_chip_43xx" />
+      <item itemvalue="GDB Remote Debug.Remote GDB" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -119,7 +128,7 @@
       <workItem from="1583268167800" duration="890000" />
       <workItem from="1583701230298" duration="96000" />
       <workItem from="1583703331918" duration="3156000" />
-      <workItem from="1583788680491" duration="1272000" />
+      <workItem from="1583788680491" duration="1640000" />
     </task>
     <task id="LOCAL-00001" summary="LPC4357 hello world">
       <created>1583268527602</created>
@@ -135,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583705862107</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="CMake + OpenOCD + local LPCXpresso + LPC4357 board works">
+      <created>1583791643339</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1583791643339</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +173,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="LPC4357 hello world" />
     <MESSAGE value="trying to configure CMake + OpenOCD build target" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying to configure CMake + OpenOCD build target" />
+    <MESSAGE value="CMake + OpenOCD + local LPCXpresso + LPC4357 board works" />
+    <option name="LAST_COMMIT_MESSAGE" value="CMake + OpenOCD + local LPCXpresso + LPC4357 board works" />
   </component>
 </project>
