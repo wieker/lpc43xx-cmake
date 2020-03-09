@@ -18,14 +18,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ad01124-2d53-4f65-ad8d-0bdfd4fd1004" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/debug/openocd.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sources/application/openocd_command" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/stlink-v2_lpc43xx.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/debug/stlink-v2_lpc43xx.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platform/lpc43xx/ldscripts/default/lib/newlib-nano/nohost_lib.ld" beforeDir="false" afterPath="$PROJECT_DIR$/platform/lpc43xx/ldscripts/default/lib/newlib-nano/nohost_lib.ld" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platform/lpc43xx/ldscripts/default/lib/newlib/nohost_lib.ld" beforeDir="false" afterPath="$PROJECT_DIR$/platform/lpc43xx/ldscripts/default/lib/newlib/nohost_lib.ld" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/platform/lpc43xx/lpc43xx_targets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/platform/lpc43xx/lpc43xx_targets.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/application/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sources/application/CMakeLists.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -123,7 +118,8 @@
       <updated>1583268165776</updated>
       <workItem from="1583268167800" duration="890000" />
       <workItem from="1583701230298" duration="96000" />
-      <workItem from="1583703331918" duration="2510000" />
+      <workItem from="1583703331918" duration="3156000" />
+      <workItem from="1583788680491" duration="1272000" />
     </task>
     <task id="LOCAL-00001" summary="LPC4357 hello world">
       <created>1583268527602</created>
@@ -132,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583268527602</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="trying to configure CMake + OpenOCD build target">
+      <created>1583705862107</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1583705862107</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,6 +156,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="LPC4357 hello world" />
-    <option name="LAST_COMMIT_MESSAGE" value="LPC4357 hello world" />
+    <MESSAGE value="trying to configure CMake + OpenOCD build target" />
+    <option name="LAST_COMMIT_MESSAGE" value="trying to configure CMake + OpenOCD build target" />
   </component>
 </project>

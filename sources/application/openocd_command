@@ -1,0 +1,1 @@
+/home/wieker/Projects/linux/hackrf/openocd-bin/bin/openocd -f /home/wieker/Projects/linux/some_repos/lpc43xx-cmake/debug/stlink-v2_lpc43xx.cfg -c "init; reset; sleep 500; halt; flash write_image erase /home/wieker/Projects/linux/some_repos/lpc43xx-cmake/cmake-build-debug/bin/HelloWorld.bin 0x1a000000 bin; sleep 500; reset; shutdown;"
